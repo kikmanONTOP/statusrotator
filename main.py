@@ -1,6 +1,6 @@
 @tasks.loop(seconds=60)
 async def change_status():
-    statuses = ['https://github.com/kikmanONTOP', 'd3vshub on top', '/contact', 'https://dsc.gg/d3vshub']
+    statuses = ['https://github.com/kikmanONTOP', 'd3vshub on top', 'dsc.gg/d3vshub', 'https://dsc.gg/d3vshub']
     current_status = getattr(change_status, "current_status", None)
     if current_status is None or len(current_status) >= len(statuses):
         change_status.current_status = statuses[:1]
